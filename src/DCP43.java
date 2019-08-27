@@ -10,17 +10,24 @@ public class DCP43 {
     public void push(int val, Stack <Integer> arr){
         arr.push(val);
 
+
     }
 
-    public void pop(int val, Stack <Integer> arr){
-        arr.pop();
+    public int pop(Stack <Integer> arr){
+
+        return arr.pop();
+
     }
 
     public void max(int val, Stack <Integer> arr){
-        int maxValue = 0;
+        int maxValue = arr.pop();
 
         for(int i = 0; i < arr.size(); i++){
-            
+            int k = arr.pop();
+            if (k < maxValue){
+                maxValue = k;
+            }
+
         }
 
     }
@@ -29,12 +36,21 @@ public class DCP43 {
         Scanner findNumber = new Scanner(System.in);
         System.out.println("Enter number");
         arr.add(findNumber.nextInt());
+
+
     }
 
     public static void main(String[] args) {
         Stack <Integer> arr = new Stack();
 
+        arr.add(9);
+        arr.add(5);
+        arr.add(3);
+        arr.add(8);
+        arr.add(4);
+
         DCP43 test = new DCP43();
-        test.GetNumber(arr);
+        test.pop(arr);
+
     }
 }

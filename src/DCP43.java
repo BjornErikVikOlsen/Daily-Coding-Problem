@@ -55,6 +55,12 @@ public class DCP43 {
         }
     }
 
+    public void PrintStack3(Stack <Integer> arr){
+        for(int i : arr){
+            System.out.println(arr.pop());
+        }
+    }
+
     public static void main(String[] args) {
         Stack <Integer> arr = new Stack();
 
@@ -65,7 +71,7 @@ public class DCP43 {
         arr.add(4);
 
         DCP43 test = new DCP43();
-        test.PrintStack2(arr);
+        test.PrintStack3(arr);
 
     }
 }

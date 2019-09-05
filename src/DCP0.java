@@ -7,16 +7,16 @@ public class DCP0 {
     public void FizzBuzz(){
         for(int i = 1; i < 100; i++){
             String a = "";
-            if (i%3 == 0){
-                a = "Fizz";
+            if (i % 3 == 0){
+                a += "Fizz";
             }
-            else if (i%5 == 0){
-                a = "Buzz";
+            if (i % 5 == 0){
+                a += "Buzz";
             }
-            else
+            if (a == ""){
                 a = Integer.toString(i);
-                System.out.println(a);
-
+            }
+            System.out.println(a);
         }
 
     }

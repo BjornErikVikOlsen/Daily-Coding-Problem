@@ -10,10 +10,10 @@ public class DCP0 {
             if (i % 3 == 0){
                 a += "Fizz";
             }
-            if (i % 5 == 0){
+            else if (i % 5 == 0){
                 a += "Buzz";
             }
-            if (a == ""){
+            else if (a == ""){
                 a = Integer.toString(i);
             }
             System.out.println(a);
@@ -26,10 +26,10 @@ public class DCP0 {
             if(i % 3 == 0 && i % 5 == 0){
                 System.out.println("FizzBuzz");
             }
-            if(i % 3 == 0){
+            else if(i % 3 == 0){
                 System.out.println("Fizz");
             }
-            if(i % 5 == 0){
+            else if(i % 5 == 0){
                 System.out.println("Buzz");
             }
             else

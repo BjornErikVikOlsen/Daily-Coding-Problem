@@ -38,7 +38,9 @@ public class DCP0 {
     }
 
     public void FizzBuzz3(){
-        
+        for(int i = 1; i<100; i++){
+
+        }
     }
 
     public static void main(String[] args) {

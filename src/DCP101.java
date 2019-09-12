@@ -34,6 +34,7 @@ public class DCP101 {
         if(i < 2){
             System.out.println("Number is smaller than 2. Try a new number");
             GetNum();
+            //test
         }
 
 

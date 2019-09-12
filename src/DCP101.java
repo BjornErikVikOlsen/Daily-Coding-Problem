@@ -26,7 +26,7 @@ public class DCP101 {
         System.out.println("Enter number");
         int i = findNumber.nextInt();
 
-        
+
 
     }
 

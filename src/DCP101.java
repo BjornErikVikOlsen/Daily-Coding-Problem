@@ -21,13 +21,17 @@ import java.util.Scanner;
 
 public class DCP101 {
 
-    public void ReturnTwoPrimes(){
+    public void GetNum(){
         Scanner findNumber = new Scanner(System.in);
         System.out.println("Enter number");
         int i = findNumber.nextInt();
 
         
 
+    }
+
+    public void ReturnTwoPrimes(){
+        
     }
 
     public static void main(String[] args){

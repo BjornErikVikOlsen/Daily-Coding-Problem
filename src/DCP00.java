@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class DCP00 {
@@ -11,9 +12,22 @@ public class DCP00 {
 
         int [] arra = {2,4,6};
 
+        Iterator it = new Iterator() {
+            @Override
+            public boolean hasNext() {
+                return false;
+            }
+
+            @Override
+            public Object next() {
+                return null;
+            }
+        };
+
         DCP00 test = new DCP00();
         //test.PrintNum(arra, 5);
-        test.PrintNum2(arr, 5);
+        //test.PrintNum2(arr, 5);
+        test.PrintNum3(arr);
     }
 
     public void PrintNum(int [] arra, int k){
@@ -33,6 +47,14 @@ public class DCP00 {
             if(l < k){
                 System.out.println(l);
             }
+        }
+    }
+
+    public void PrintNum3(ArrayList<Integer> arr){
+
+
+        while (arr.isEmpty()){
+            System.out.println("h");
         }
     }
 }

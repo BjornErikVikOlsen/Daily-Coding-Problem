@@ -26,7 +26,7 @@ public class DCP132 {
     }
 
     public void rangeTime(int upper, int lower){
-        
+
     }
 
     public static void main(String[] args) {

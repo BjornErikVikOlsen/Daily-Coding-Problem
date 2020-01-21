@@ -10,14 +10,15 @@ public class DCP159 {
 
     String word;
 
-    public void getWord(){
+    public String getWord(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter word: ");
         word = scanner.toString();
-        printString();
+        printString(word);
+        return word;
     }
 
-    public void printString(){
+    public void printString(String word){
         System.out.println(word);
     }
 

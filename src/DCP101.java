@@ -25,24 +25,16 @@ public class DCP101 {
         Scanner findNumber = new Scanner(System.in);
         System.out.println("Enter number");
         int i = findNumber.nextInt();
-        ReturnTwoNum(i);
+
         
 
     }
 
-    public void ReturnTwoNum(int i){
-        if(i < 2){
-            System.out.println("Number is smaller than 2. Try a new number");
-            GetNum();
-            //test
-        }
-
-
+    public void ReturnTwoPrimes(){
+        
     }
 
     public static void main(String[] args){
-        DCP101 test = new DCP101();
-        test.GetNum();
 
     }
 }

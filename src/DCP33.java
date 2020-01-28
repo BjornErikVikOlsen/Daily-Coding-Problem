@@ -7,8 +7,8 @@ public class DCP33 {
     public static void main(String[] args) {
 
         List <Double> arr = new ArrayList<>();
-        arr.add(1.0);
-        arr.add(5.0);
+        //arr.add(1.0);
+        //arr.add(5.0);
         DCP33 test = new DCP33();
         test.GetNumber(arr);
 

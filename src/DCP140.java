@@ -6,11 +6,21 @@ For example, given the array [2, 4, 6, 8, 10, 2, 6, 10], return 4 and 8. The ord
 Follow-up: Can you do this in linear time and constant space?
  */
 
+import java.util.List;
+
 public class DCP140 {
 
-    public static void main(String[] args) {
 
+    private void findTwoElements(int[] arr){
         
+    }
+
+    private static void main(String[] args) {
+
+        int[] arr = {2, 4, 6, 8, 10, 2, 6, 10};
+
+        DCP140 test = new DCP140();
+        test.findTwoElements(arr);
 
     }
 }

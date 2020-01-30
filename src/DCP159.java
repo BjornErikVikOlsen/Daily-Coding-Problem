@@ -4,10 +4,7 @@ Given a string, return the first recurring character in it, or null if there is 
 For example, given the string "acbbac", return "b". Given the string "abcdef", return null.
  */
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class DCP159 {
 
@@ -35,22 +32,16 @@ public class DCP159 {
         }
     }
 
-    public char findRecurringCharacter(String word) {
+    public Character findRecurringCharacter(String word) {
 
-        HashSet<Character> h = new HashSet<>();
-
-        for (int i = 0; i < word.length(); i++) {
-            char temp = word.charAt(i);
-
-            if (h.contains(temp))
-                return temp;
-
-            else
-                h.add(temp);
-
+        Set<Character> recurringChars = new HashSet<>();
+        for (char character : word.toCharArray()) {
+            if (!recurringChars.add(character)) { // add will return false if character is
+                // already in the Set
+                return character; // return the first recurring character
+            }
         }
-
-        return '\0';
+        return null; // no recurring characters
     }
 
 }

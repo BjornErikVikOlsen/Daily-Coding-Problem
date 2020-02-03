@@ -29,9 +29,9 @@ public class DCP241 {
         Arrays.sort(arr);
 
         int result = 0;
-        for(int i=arr.length-1; i>=0; i--){
+        for(int i =arr.length-1; i >= 0; i--){
             int cnt = arr.length-i;
-            if(arr[i]>=cnt){
+            if(arr[i] >= cnt){
                 result = cnt;
             }else{
                 break;

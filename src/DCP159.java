@@ -38,6 +38,7 @@ public class DCP159 {
         for (char character : word.toCharArray()) {
             if (!recurringChars.add(character)) { // add will return false if character is
                 // already in the Set
+                System.out.println(character);
                 return character; // return the first recurring character
             }
         }

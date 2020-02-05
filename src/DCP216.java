@@ -18,5 +18,23 @@ In addition, note that the Roman numeral system uses subtractive notation for nu
 For the input XIV, for instance, you should return 14.
  */
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DCP216 {
+
+    public static void main(String[] args) {
+
+        //List<Character> charList = new ArrayList<>();
+        //List<Integer> intList = new ArrayList<>();
+        Character[] charList = {'M', 'D', 'C', 'L', 'X', 'V', 'I'};
+        Integer[] intList = {1000, 500, 100, 50, 10, 5, 1};
+
+
+    }
+
+
+    public int romNum(String rom){
+        return 0;
+    }
 }

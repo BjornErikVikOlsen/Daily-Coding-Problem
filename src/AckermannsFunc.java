@@ -41,7 +41,7 @@ public class AckermannsFunc {
         else {
             ans = ack(m - 1, ack(m,n - 1));
         }
-        System.out.println("ackermann ("+m+","+n+ ")" +ans);
+        System.out.println("Ackermann ("+m+","+n+")" +ans);
         return ans;
     }
 

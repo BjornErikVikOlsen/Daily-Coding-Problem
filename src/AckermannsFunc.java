@@ -25,11 +25,11 @@ public class AckermannsFunc {
 
     public static void main(String[] args) {
         //System.out.println(ack(4, 3));
-        AckermannsFunc g = new AckermannsFunc();
-        g.ack(1, 3);
+
+        System.out.println(ack(4,0));
     }
 
-    public int ack(int m, int n){
+    public static int ack(int m, int n){
         int ans;
 
         if(m == 0) {
@@ -41,7 +41,7 @@ public class AckermannsFunc {
         else {
             ans = ack(m - 1, ack(m,n - 1));
         }
-        System.out.println("Ackermann ("+m+","+n+")" +ans);
+
         return ans;
     }
 

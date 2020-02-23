@@ -17,6 +17,6 @@ public class DCP265 {
 
     public void employeeSalary(){
 
-        
+
     }
 }

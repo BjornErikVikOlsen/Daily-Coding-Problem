@@ -47,6 +47,9 @@ public class DCP0 {
 
         DCP0 test = new DCP0();
         test.FizzBuzz2();
+        test.FizzBuzz();
+        test.FizzBuzz3();
+
 
     }
 

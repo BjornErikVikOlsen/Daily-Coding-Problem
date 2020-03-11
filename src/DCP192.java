@@ -9,4 +9,31 @@ Given the array [1, 2, 1, 0, 0], we can't reach the end, so return false.
  */
 
 public class DCP192 {
+
+    public static void main(String[] args) {
+
+        int [] arr = {1, 3, 1, 2, 0, 1};
+        int [] arr2 = {1, 2, 1, 0, 0, 0};
+
+        DCP192 t = new DCP192();
+        System.out.println(t.advanceArray(arr));
+
+    }
+
+    public boolean advanceArray(int [] arr){
+        boolean reachEnd = false;
+        int n = arr[0];
+        int arrLength = arr.length;
+        for(int i = 0; i <= arr.length; i++){
+            n += arr[i+1];
+            if(n >= arrLength){
+                reachEnd = true;
+                break;
+            }
+            reachEnd = false;
+
+        }
+
+    return reachEnd;
+    }
 }

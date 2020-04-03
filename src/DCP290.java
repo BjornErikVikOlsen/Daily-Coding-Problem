@@ -24,15 +24,54 @@ public class DCP290 {
 
     public static void main(String[] args) {
 
-        char[] arr = {'R', 'G', 'B', 'G', 'B'};
+        char[] arr = {'R', 'G', 'B', 'G', 'G'};
+        System.out.println(calc(arr));
 
     }
 
     public static void calculateQuxes(char[] arr){
 
-        for(int i = 0; i < arr.length; i++){
+        for(int i = 0; i < arr.length - 1; i++){
+            for(int j = 0; j < arr.length - 1 - i; j++ ){
+                if(arr[j] == arr[j + 1]){
+
+                }
+            }
             
         }
+    }
+
+    public static int calc(char[] arr){
+        int red = 0;
+        int green = 0;
+        int blue = 0;
+
+        for(char c : arr){
+
+            switch (c){
+
+                case 'R':
+                    red++;
+                    break;
+
+                case 'G':
+                    green++;
+                    break;
+
+                case 'B':
+                    blue++;
+                    break;
+
+            }
+        }
+        if(red == arr.length || green == arr.length || blue == arr.length){
+            return arr.length;
+        }
+
+        if(red % 2 == green % 2 && red % 2 == blue % 2){
+            return 2;
+        }
+        return 1;
     }
 
 

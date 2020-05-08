@@ -26,4 +26,8 @@ would be incorrect since that's only 2 words.
  */
 
 public class DCP341 {
+
+    public static void main(String[] args) {
+
+    }
 }

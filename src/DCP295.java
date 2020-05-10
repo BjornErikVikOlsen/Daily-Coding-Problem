@@ -25,6 +25,6 @@ public class DCP295 {
     }
 
     public static void pascal(int k){
-        
+
     }
 }

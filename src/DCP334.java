@@ -13,5 +13,13 @@ public class DCP334 {
 
     public static void main(String[] args) {
 
+        int[] arr = {1,2,3,4};
+        int[] arr2 = {2,3,4,5};
+        int[] arr3 = {5,2,7,8};
+
+    }
+
+    public static boolean game(int[] arr){
+        return false;
     }
 }

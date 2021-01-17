@@ -10,4 +10,16 @@ For example, given the input [5, 2, 7, 8], you should return True, since (5 * 2 
 Write a function that plays the 24 game.
  */
 public class DCP334 {
+
+    public static void main(String[] args) {
+
+        int[] arr = {1,2,3,4};
+        int[] arr2 = {2,3,4,5};
+        int[] arr3 = {5,2,7,8};
+
+    }
+
+    public static boolean game(int[] arr){
+        return false;
+    }
 }

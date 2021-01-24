@@ -26,7 +26,13 @@ public class AckermannsFunc {
     public static void main(String[] args) {
         //System.out.println(ack(4, 3));
 
-        System.out.println(ack(4,0));
+        for (int i = 0; i < 6; i++){
+            for (int j = 0; j < 6; j++){
+                System.out.format("Ackermann %d, %d is: %d. Time used: %d\n", i,j,ack(i,j), System.currentTimeMillis());
+            }
+        }
+
+
     }
 
     public static int ack(int m, int n){

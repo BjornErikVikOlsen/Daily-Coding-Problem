@@ -4,7 +4,7 @@ Implement FizzBuzz
 
 public class DCP0 {
 
-    public void FizzBuzz(){
+    public void fizzBuzz(){
         for(int i = 1; i < 100; i++){
             String a = "";
             if (i % 3 == 0){
@@ -21,7 +21,7 @@ public class DCP0 {
 
     }
 
-    public void FizzBuzz2(){
+    public void fizzBuzz2(){
         for(int i = 1; i<100; i++){
             if(i % 3 == 0 && i % 5 == 0){
                 System.out.println("FizzBuzz");
@@ -37,7 +37,7 @@ public class DCP0 {
         }
     }
 
-    public void FizzBuzz3(){
+    public void fizzBuzz3(){
         for(int i = 1; i<100; i++){
             if (i % 3 == 0){
                 System.out.print("Fizz");
@@ -51,12 +51,34 @@ public class DCP0 {
         }
     }
 
+    public void fizzBuzz4(){
+        int i = 0;
+        while (i < 100){
+            if(i % 3 == 0 && i % 5 == 0){
+                i++;
+                System.out.println("FizzBuzz");
+            }
+            else if(i % 3 == 0){
+                i++;
+                System.out.println("Fizz");
+            }
+            else if(i % 5 == 0){
+                i++;
+                System.out.println("Buzz");
+            }
+            else
+                i++;
+                System.out.println(i);
+        }
+    }
+
     public static void main(String[] args) {
 
         DCP0 test = new DCP0();
-        test.FizzBuzz2();
-        test.FizzBuzz();
-        test.FizzBuzz3();
+//        test.fizzBuzz2();
+//        test.fizzBuzz();
+//        test.fizzBuzz3();
+        test.fizzBuzz4();
 
 
     }

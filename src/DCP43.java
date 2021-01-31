@@ -1,4 +1,3 @@
-import java.util.List;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -21,9 +20,7 @@ public class DCP43 {
     }
 
     public int pop(Stack <Integer> arr){
-
         return arr.pop();
-
     }
 
     public void max(int val, Stack <Integer> arr){
@@ -34,9 +31,7 @@ public class DCP43 {
             if (k < maxValue){
                 maxValue = k;
             }
-
         }
-
     }
 
     public void GetNumber(Stack <Integer> arr){
@@ -47,11 +42,9 @@ public class DCP43 {
     }
 
     public void PrintStack(Stack <Integer> arr){
-
         while(!arr.isEmpty()){
             System.err.println(arr.pop());
         }
-
     }
 
     public void PrintStack2(Stack <Integer> arr){

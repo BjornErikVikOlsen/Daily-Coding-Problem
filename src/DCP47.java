@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 
 /*
 Given a array of numbers representing the stock prices of a company in chronological order,
@@ -14,19 +13,33 @@ public class DCP47 {
 
     public static void main(String[] args) {
 
-        List<Integer> arr = new ArrayList();
+        ArrayList<Integer> arr = new ArrayList();
 
         arr.add(9);
         arr.add(11);
         arr.add(8);
         arr.add(5);
+        arr.add(7);
+        arr.add(10);
+
+        DCP47 dcp47 = new DCP47();
+        dcp47.CalcMaxProf(arr);
 
     }
 
-    public void CalcMaxProf(ArrayList <Integer> arr){
+    public int CalcMaxProf(ArrayList <Integer> arr){
+        int max = 0;
         for(int i = 0; i < arr.size(); i++){
-            
+            for (int j = 1; j < arr.size(); j++){
+                if (arr.get(j) > arr.get(i)){
+                    if ((arr.get(j) - arr.get(i)) > max){
+                        max = (arr.get(j) - arr.get(i));
+                    }
+                }
+            }
         }
+        System.out.println(max);
+        return max;
     }
 
 }

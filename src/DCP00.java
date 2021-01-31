@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 
 public class DCP00 {
 
@@ -37,7 +36,6 @@ public class DCP00 {
                 System.out.println(num);
             }
         }
-
     }
 
     public void PrintNum2(ArrayList<Integer> arr, int k){
@@ -51,7 +49,6 @@ public class DCP00 {
     }
 
     public void PrintNum3(ArrayList<Integer> arr){
-
 
         while (arr.isEmpty()){
             System.out.println("h");

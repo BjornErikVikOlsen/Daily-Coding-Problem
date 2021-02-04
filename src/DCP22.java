@@ -13,12 +13,21 @@ public class DCP22 {
         String s = "thequickbrownfox";
         String[] arr = {"the", "quick", "brown", "fox"};
         DCP22 dcp22 = new DCP22();
-        System.out.println(dcp22.returnWords(s, arr));
+        dcp22.returnWords(s, arr);
 
     }
 
     public String[] returnWords(String s, String[] arr){
-
-        return arr;
+        String[] newArr = null;
+        for (int i = 0; i < arr.length; i++){
+            String word = arr[i];
+            if (s.contains(word)){
+                System.out.println(word);
+            }
+            else if (!s.contains(word)){
+                return null;
+            }
+        }
+        return newArr;
     }
 }

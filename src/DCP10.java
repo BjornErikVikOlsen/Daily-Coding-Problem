@@ -7,7 +7,7 @@ Implement a job scheduler which takes in a function f and an integer n, and call
 public class DCP10 {
 
     public static void main(String[] args) {
-        solution(new Command() {
+        scheduleCommand(new Runnable() {
             @Override
             public void execute() {
                 {
@@ -16,23 +16,22 @@ public class DCP10 {
             }
         }, 1000);
 
-        // java 8
-        solution(() -> System.out.println("Hello World"), 1000);
+        scheduleCommand(() -> System.out.println("Hello World"), 1000);
     }
 
-    public static void solution(Command command, int delay) {
+    public static void scheduleCommand(Runnable runnable, int delay) {
         new Timer().schedule(new TimerTask() {
 
             @Override
             public void run() {
-                command.execute();
+                runnable.execute();
             }
         }, delay);
 
     }
 
-    interface Command {
-        public void execute();
+    interface Runnable {
+        void execute();
     }
 
 }

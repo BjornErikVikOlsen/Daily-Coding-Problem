@@ -1,3 +1,5 @@
+import javafx.util.Pair;
+
 /*
 cons(a, b) constructs a pair, and car(pair) and cdr(pair) returns the first and last element of that pair. For example,
 car(cons(3, 4)) returns 3, and cdr(cons(3, 4)) returns 4.
@@ -17,8 +19,9 @@ public class DCP5 {
 
     }
 
-    public void cons(int a, int b){
-
+    public Pair cons(int a, int b){
+        Pair<Integer,Integer> pair = new Pair<>(a,b);
+        return pair;
     }
 
     public void car(){

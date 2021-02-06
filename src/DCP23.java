@@ -1,3 +1,5 @@
+import java.util.Random;
+
 /*
 You are given an M by N matrix consisting of booleans that represents a board. Each True boolean represents a wall. Each False boolean represents a tile you can walk on.
 
@@ -18,5 +20,30 @@ public class DCP23 {
 
     public static void main(String[] args) {
 
+        DCP23 dcp23 = new DCP23();
+        boolean [][] matrix = dcp23.createMatrix(2,2);
+        dcp23.printMatrix(matrix);
+
+    }
+
+    public boolean[][] createMatrix(int m, int n){
+        boolean[][] matrix = new boolean[m + 1][n + 1];
+        Random random = new Random();
+        for (int i = 0; i < m; i++){
+            for (int j = 0; j < n; j++){
+
+                matrix[i][j] = random.nextBoolean();
+
+            }
+        }
+        return matrix;
+    }
+
+    public void printMatrix(boolean[][] matrix){
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.println(matrix[i][j]);
+            }
+        }
     }
 }

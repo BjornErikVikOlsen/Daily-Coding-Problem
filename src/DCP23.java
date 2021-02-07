@@ -1,3 +1,5 @@
+import javafx.util.Pair;
+
 import java.util.Random;
 
 /*
@@ -23,7 +25,14 @@ public class DCP23 {
         DCP23 dcp23 = new DCP23();
         boolean [][] matrix = dcp23.createMatrix(2,2);
         dcp23.printMatrix(matrix);
+        Pair start = new Pair(3,0);
+        Pair end = new Pair(0,0);
+        System.out.println(dcp23.minSteps(matrix, start, end));
 
+    }
+
+    public int minSteps(boolean[][] matrix, Pair start, Pair end){
+        return 0;
     }
 
     public boolean[][] createMatrix(int m, int n){

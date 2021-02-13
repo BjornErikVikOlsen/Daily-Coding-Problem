@@ -17,6 +17,6 @@ Given a three-word puzzle like the one above, create an algorithm that finds a s
 public class DCP616 {
 
     public static void main(String[] args) {
-        
+
     }
 }

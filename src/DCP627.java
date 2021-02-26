@@ -1,5 +1,6 @@
 /*
-Given an iterator with methods next() and hasNext(), create a wrapper iterator, PeekableInterface, which also implements peek(). peek shows the next element that would be returned on next().
+Given an iterator with methods next() and hasNext(), create a wrapper iterator, PeekableInterface, which also implements peek().
+peek shows the next element that would be returned on next().
 
 Here is the interface:
 
@@ -25,8 +26,14 @@ public class DCP627 {
 
     public class PeekableInterface {
 
+        public void init() {}
+
         public int peek(){
             return 0;
         }
+
+        public int next() { return 0; }
+
+        public int hasNext() { return 0; }
     }
 }

@@ -1,6 +1,9 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="Problem1" type="CLASS" />
+      <mapping pattern="Problem2" type="CLASS" />
+      <mapping pattern="problem1" type="JAVA" />
       <mapping ext="dat" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
